@@ -1,16 +1,15 @@
 
 import { ChangeEvent, SyntheticEvent, useState } from 'react';
 import './App.css';
-import CardList from './Components/CardList/CardList';
-import Search from './Components/Search/Search';
 import { CompanySearch } from './company';
 import { searchCompanies } from './api';
-
+import Search from './Components/Search/Search';
+import CardList from './Components/CardList/CardList';
 
 function App() {
   const [search, setSearch] = useState<string>("");
   const [searchResult, setSearchResult] = useState<CompanySearch[]>([]);
-  const [serverError, setServerError] = useState<string>("");
+  const [serverError, setServerError] = useState<string | null>(null);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
    setSearch(e.target.value);
@@ -29,7 +28,8 @@ function App() {
   return (
     <div className="App">
       <Search onClick = {onClick} search = {search} handleChange = {handleChange}/>
-      <CardList />
+      <CardList searchResults = {searchResult}/>
+      {serverError && <h1>{serverError}</h1>}
     </div>
   );
 }
