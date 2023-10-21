@@ -47,8 +47,6 @@ const SearchPage = (props: Props) => {
   }
   return (
     <>
-      <Navbar/>
- 
       <Search
        onSearchSubmit = {onSearchSubmit} 
        search = {search} 
