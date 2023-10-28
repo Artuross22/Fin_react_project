@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { CompanyKeyMetrics } from '../../company';
 import { useOutletContext } from 'react-router-dom';
 import { getKeyMetrics } from '../../api';
-import RatioList from '../RadioList/RadioList';
+import RatioList from '../RatioList/RatioList';
 
 type Props = {}
 

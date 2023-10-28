@@ -34,7 +34,15 @@ interface Props {
             className="flex md:min-w-full text-blueGray-500 text-medium uppercase font-bold block pt--1 pb-4 no-underline"
             >
               <FaHome/>
-              <h6 className="ml-3">Income Statement</h6>
+              <h6 className="ml-3">Income Statement</h6>          
+            </Link>
+            
+            <Link 
+            to="balance-sheet"
+            className="flex md:min-w-full text-blueGray-500 text-medium uppercase font-bold block pt--1 pb-4 no-underline"
+            >
+              <FaHome/>
+              <h6 className="ml-3">Balance Sheet</h6>
           
             </Link>
 
