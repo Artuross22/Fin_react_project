@@ -43,6 +43,15 @@ export interface CompanySearch {
     isAdr: boolean;
     isFund: boolean;
   }
+  export interface CompanyTenK {
+    symbol: string;
+    fillingDate: string;
+    acceptedDate: string;
+    cik: string;
+    type: string;
+    link: string;
+    finalLink: string;
+  }
   
   export interface CompanyKeyRatios {
     dividendYielTTM: number;
