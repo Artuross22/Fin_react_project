@@ -246,6 +246,11 @@ export interface CompanySearch {
     finalLink: string;
   }
 
+  export interface CompanyCompData {
+    symbol: string;
+    peersList: string[];
+  }
+
   export interface CompanyKeyMetrics {
     revenuePerShareTTM: number;
     netIncomePerShareTTM: number;
