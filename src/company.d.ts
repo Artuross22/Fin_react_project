@@ -43,6 +43,21 @@ export interface CompanySearch {
     isAdr: boolean;
     isFund: boolean;
   }
+
+  export interface CompanyHistoricalDividend {
+    symbol: string;
+    historical: Dividend[];
+  }
+  
+  export interface Dividend {
+    date: string;
+    label: string;
+    adjDividend: number;
+    dividend: number;
+    recordDate: string;
+    paymentDate: string;
+    declarationDate: string;
+  }
   export interface CompanyTenK {
     symbol: string;
     fillingDate: string;
